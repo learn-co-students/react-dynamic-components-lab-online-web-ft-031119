@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// are we missing an import?
+import Comment from './Comment';
 
 export default class BlogPost extends Component {
   render() {
@@ -18,12 +18,11 @@ export default class BlogPost extends Component {
         My meme fortress is built<br/>
         I won't let you tilt me<br/>
         You only grew accustomed to the salt<br/>
-        I was born in it<br/>
-        {/* (remove the comment ticks and their surrounding brackets)
-        <Comment commentText={comments[0]} />
-        <Comment commentText={comments[0]} />
-        <Comment commentText={comments[0]} />
-        */}
+        I was born in it<br/><br/>
+        <Comment commentText={comments[0]} /><br/>
+        <Comment commentText={comments[1]} /><br/>
+        <Comment commentText={comments[2]} /><br/>
+       
       </div>
     );
   }
